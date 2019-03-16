@@ -66,4 +66,4 @@ if __name__ == "__main__":
     app.logger.addHandler(handler)
     if not os.path.exists(UPLOAD_FOLDER):
         os.makedirs(UPLOAD_FOLDER, 0755 )
-    app.run(debug=True)
+    app.run(host="0.0.0.0", debug=True)
