@@ -29,3 +29,21 @@ docker-compose -f docker-compose-build.yml up  -d
 docker-compose  up  -d
 # or
 docker-compose -f docker-compose.yml up  -d
+
+
+
+
+
+
+# Deploying the application using kubenetes (Minikube)
+
+# Configure monikube registries (AWS, Google or docker hub)
+
+minikube addons configure registry-creds
+
+
+# Create the deployment and service 
+kubectl  apply -f kube-deployment.yml
+
+
+
